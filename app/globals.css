@@ -10,8 +10,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --foreground-rgb: 0,0,0;
+    --background-start-rgb:white;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -31,3 +31,156 @@ body {
     text-wrap: balance;
   }
 }
+.logotxt {
+  font-size: 11px;
+  color: #777;
+  text-align: left;
+  padding-bottom: 2px;
+}
+.logotop {
+  top: 18px;
+  text-align: left;
+}
+
+.btn-login{
+  background: transparent;
+  color: #ff9902;
+  text-decoration: none;
+  padding: 7px 26px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 900;
+  border: 1px solid #ff9902;
+  letter-spacing: 0.7px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  margin-top: -12px;
+}
+.helptext-header {
+  font-size: 14px;
+  color: #1f1f1f;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.top-content-textnew {
+  font-size: 19px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.22px;
+  margin-top: 18px;
+  width: 495px;
+  line-height: 26px;
+  text-shadow: 0px 0px #000000;
+}
+.createprofile-text {
+  background: #2daa62;
+  margin-top: -56px;
+  position: absolute;
+  width: 371px;
+  border-radius: 20px;
+  padding: 26px 26px;
+  color: #fff;
+  line-height: 0px;
+  height: 35px;
+  font-size: 22px;
+  letter-spacing: 0.66px;
+}
+@media only screen and (max-width: 500px){
+  .createprofile-text {
+    background: #2daa62;
+    margin-top: -56px;
+    position: absolute;
+    width: 291px;
+    border-radius: 20px;
+    padding: 26px 26px;
+    color: #fff;
+    font-size:x-small;
+    line-height: 0px;
+    height: 35px;
+    font-size: 16px;
+    letter-spacing: 0.66px;
+  }
+
+}
+
+
+.dh-frmbdr {
+  margin-top: 0;
+  position: relative;
+  box-shadow: 0px 12px 23px 2px #7b7b7b;
+  float: left;
+  width: 350px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  top:-19px;
+}
+@media only screen and (max-width: 500px){
+  .dh-frmbdr {
+    margin-top: 0;
+    box-shadow: none;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 0px 12px 23px 2px #7b7b7b;
+    background: #fff;
+    padding: 2px 20px 20px;
+    width: 88%;
+    
+}
+}
+
+.register-title-textnew {
+  font-size: 20px;
+  width: 330px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: #7e1010;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 500px){
+  .register-title-textnew {
+    font-size: 16px;
+    width: 330px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+form{
+  display: block;
+}
+.newform-position {
+  position: absolute;
+  margin-top: -6%;
+  right: 17%;
+}
+@media only screen and (max-width: 500px){
+  .newform-position {
+    
+    position: absolute;
+    margin-top: -6%;
+    left: 2%;
+  }
+}
+.dh-btn {
+  width: 100%;
+  font-size: 15px;
+  height: auto;
+  font-family: Lato;
+  font-weight: 700;
+  color:#fff;
+  padding: 0 30px;
+  border-radius: 15px !important;
+  letter-spacing: 1px;
+  height: 48px;
+  margin-top: 25px;
+  background: #e06506;
+}
+
+
