@@ -8,7 +8,7 @@ export default function Banner() {
                     The biggest and most trusted
                     matrimony service for Malayalees!
                 </h1>
-                <div className="top-content-textnew">Now find matches based on your hobbies &amp; interests</div>
+                <h4  className="text-xl  font-normal pt-0 border-r-black">Now find matches based on your hobbies &amp; interests</h4>
             </div>
         </div>
     )
