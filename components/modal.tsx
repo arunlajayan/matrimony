@@ -1,7 +1,7 @@
 'use client'
 
 import { loginApi } from "@/actions/api/dataget";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useFormState } from "react-dom";
 
 let initialState = {
@@ -13,7 +13,9 @@ function Modal() {
     const sellYourItemAction = (prevState: any, formData: FormData) => {
       const email =  formData.get('email')
         const password =formData.get('password')
-        loginApi({"email":email,"password":password})
+        loginApi({ "email": email, "password": password }).then((res) => {
+            router.push("/profile");
+        })
     }
     const [state, formAction] = useFormState<any>(
         sellYourItemAction as any,

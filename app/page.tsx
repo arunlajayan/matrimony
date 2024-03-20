@@ -6,7 +6,7 @@ import Image from "next/image";
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
 };
-export default function Home({ searchParams }: SearchParamProps) {
+export default function Home({ searchParams }: SearchParamProps): React.ReactElement {
   const show = searchParams?.modal;
   return (
     <main className="min-h-screen">
