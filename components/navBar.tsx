@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '@/public/image/icon/keralamatrimony-logo.png'
 import Image from 'next/image'
 import ButtonLogin from './button.login'
+import Logout from '@/components/logout'
 
 export default function Navbar() {
   return (
@@ -21,9 +22,12 @@ export default function Navbar() {
         <div >
             <ButtonLogin />
         </div> */}
-        <div className='helptext-header'> 
+              <div>
+                <Logout/>
+              </div>
+        {/* <div className='helptext-header'> 
         Help
-    </div>
+    </div> */}
     </div>
     
 </div>

@@ -5,7 +5,7 @@ import React from 'react'
 export default function Page() {
   return (
     <div>
-      <NavBar/>
-      <Profile /></div>
+      <Profile />
+      </div>
   )
 }

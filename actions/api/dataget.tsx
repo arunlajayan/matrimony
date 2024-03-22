@@ -31,7 +31,7 @@ export const loginApi = async (data: any) => {
     }
 
     const responseData: LoginResponse = await response.json();
-    console.log(responseData);
+    // console.log(responseData);
     localStorage.setItem("token", responseData.token)
     
   } catch (error) {
@@ -53,7 +53,7 @@ export const getUser = async () => {
     }
 
     const responseData: LoginResponse = await response.json();
-    console.log(responseData);
+    // console.log(responseData);
     localStorage.setItem("token", responseData.token)
     return responseData;
     
@@ -61,3 +61,27 @@ export const getUser = async () => {
     console.error("Error:", error);
   }
 };
+
+export const logoutApi = async () => {
+  try {
+    
+    const response = await fetch("/api/users/logout", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch");
+    }
+    const responseData: any = await response.json();
+    // console.log(responseData);
+    localStorage.setItem("token", responseData.token)
+    return responseData;
+  } catch (error: any) {
+      console.log(error.message)
+      
+  }
+
+}

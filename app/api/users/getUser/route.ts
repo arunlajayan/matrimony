@@ -7,7 +7,7 @@ connect();
 
 export async function GET(res: any) {
     try {
-        const users = await User.find({})
+        const users = await User.find({}).select("-password");
         return NextResponse.json({
             message: "all users",
             success: true,

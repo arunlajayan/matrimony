@@ -14,7 +14,7 @@ function Modal() {
       const email =  formData.get('email')
         const password =formData.get('password')
         loginApi({ "email": email, "password": password }).then((res) => {
-            router.push("/profile");
+            router.push("/profile/dashboard");
         })
     }
     const [state, formAction] = useFormState<any>(
