@@ -3,6 +3,7 @@ import User from "@/models/userModel";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
 import { sendEmail } from "@/helper/mailer";
+import { CreateUSerDto } from "@/dto/create-user";
 
 connect();
 
@@ -29,7 +30,7 @@ export async function POST(request: NextRequest) {
             password: hashedPassword,
         });
 
-        const savedUser = await newUser.save();
+        const savedUser :CreateUSerDto= await newUser.save();
       const saveMail =   await sendEmail({email, emailType: "VERIFY",
             userId: savedUser._id
         })
