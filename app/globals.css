@@ -174,7 +174,7 @@ form{
 }
 .newform-position {
   position: absolute;
-  margin-top: -6%;
+
   right: 17%;
 }
 @media only screen and (max-width: 500px){
